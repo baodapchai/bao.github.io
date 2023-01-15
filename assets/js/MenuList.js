@@ -1,4 +1,4 @@
-endpoint = `https://docs-api.jrtxtracy.repl.co`
+endpoint = `https://docs-api.blackbotloapi.repl.co`
 message_list = [{
     icon: 'fa-solid fa-star-exclamation',
     title: 'Trang web bắt đầu hoạt động',
