@@ -691,19 +691,15 @@ item_list = [
         icon: 'fas fa-user-headset',
         item: [{
             event: 'DO NOT SPAM',
-            url: 'https://www.facebook.com/NHD.JRT.262/',
+            url: 'https://www.facebook.com/nguyentyhanhmai.profile/',
             name: 'Facebook'
         },
         {
-            url: 'https://zalo.me/0396049649',
+            url: 'https://zalo.me/0974052602',
             name: 'Zalo'
-        },
+        },     
         {
-            url: 'https://t.me/nhdjrt262',
-            name: 'Telegram'
-        },       
-        {
-            url: 'https://bio.link/nhdjrt262',
+            url: 'nguyenthanhmai.tk',
             name: 'My Profile'
         },
         {
@@ -711,25 +707,9 @@ item_list = [
             name: 'Donate Momo'
         },
         {
-            url: 'https://playerduo.com/nhdjrt2602',
-            name: 'Donate PlayerDuo Pay'
-        },
-        {
-            url: 'https://playerduo.com/hdjrt03',
-            name: 'Donate PlayerDuo'
-        },
-        {
             url: 'https://imgur.com/NXX9Lnh',
             name: 'Donate Mbbank (ATM)'
-        },
-        {
-            url: 'https://imgur.com/LBeXzsy',
-            name: 'Donate ZaloPay'
-        },
-        {
-            url: 'https://i.imgur.com/vTx2DQp.jpg',
-            name: 'Donate Timo Bank (ATM)'
-        }       
+        } 
       ]
     }
 ];
