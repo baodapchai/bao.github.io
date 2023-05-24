@@ -1,4 +1,4 @@
-endpoint = `https://docs-api.blackbotloapi.repl.co`
+endpoint = `https://api.quangbao.click`
 message_list = [{
     icon: 'fa-solid fa-star-exclamation',
     title: 'Trang web bắt đầu hoạt động',
@@ -18,27 +18,6 @@ item_list = [
             "url": endpoint + '/apikey?type=checker&apikey=${apikey}',
             "name": "Check APIKEY"
         }
-        ]
-    },
-    {
-        name: 'Download Video Social',
-        icon: 'fa fa-cloud-download',
-        item: [{
-            "url": 'https://nguyenmanh.name.vn/facebook',
-            "name": "Download Video Facebook"
-        },
-        {
-            "url": 'https://nguyenmanh.name.vn/tiktok',
-            "name": "Download Video Tiktok"
-        },
-        {
-            "url": 'https://nguyenmanh.name.vn/youtube',
-            "name": "Download Video Youtube"
-        },
-        {
-            "url": 'https://nguyenmanh.name.vn/douyin',
-            "name": "Download Video Tiktok Douyin"
-        }       
         ]
     },
     {
