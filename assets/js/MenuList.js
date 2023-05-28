@@ -1,4 +1,4 @@
-endpoint = `https://api.quangbao.click`
+endpoint = `https://docs-api.jrtxtracy.repl.co`
 message_list = [{
     icon: 'fa-solid fa-star-exclamation',
     title: 'Trang web bắt đầu hoạt động',
@@ -12,70 +12,107 @@ item_list = [
         icon: 'fa-solid fa-pen-alt',
         item: [{
             "url": endpoint + '/apikey?type=register&name=${name}',
-            "name": "Tạo APIKEY Free"
+            "name": "Get APIKEY Free"
         },
         {
             "url": endpoint + '/apikey?type=checker&apikey=${apikey}',
             "name": "Check APIKEY"
+        },
+        {
+            "url": 'https://bit.ly/JRTxTracy',
+            "name": "Hướng dẫn tạo API_KEY"
+        },
+        {
+            "url": 'https://i.imgur.com/odcEJWo.png',
+            "name": "Mã QR tạo API_KEY"
         }
         ]
     },
     {
+        event: 'HOT',
+        name: 'Download Video Social',
+        icon: 'fa fa-cloud-download',
+        item: [{
+            "url": 'https://nguyenmanh.name.vn/facebook',
+            "name": "Download Video Facebook"
+        },
+        {
+            "url": 'https://nguyenmanh.name.vn/tiktok',
+            "name": "Download Video Tiktok"
+        },
+        {
+            "url": 'https://nguyenmanh.name.vn/youtube',
+            "name": "Download Video Youtube"
+        },
+        {
+            "url": 'https://nguyenmanh.name.vn/douyin',
+            "name": "Download Video Tiktok Douyin"
+        },
+        {
+            "url": 'https://nguyenmanh.name.vn/videodl',
+            "name": "Download All Video No Logo"
+        }       
+        ]
+    },
+    {
+        event: 'HOT',
         name: 'Facebook',
         icon: 'fa-brands fa-facebook',
         item: [{
-            "url": endpoint + '/facebook/finduid?uid=4',
-            "name": "Xem ngày tạo tài khoản"
+            "url": endpoint + '/facebook/finduid?url=https://www.facebook.com/NHD.JRT.262/',
+            "name": "Find UID"
         },
         {
-            "url": endpoint + '/facebook/getinfo?uid=4',
-            "name": "Xem Info Facebook"
+            "url": endpoint + '/facebook/info?uid=100033478361032',
+            "name": "Get Info"
         },
         {
-            "url": endpoint + '/fbdownload?url=https://fb.watch/kJJaY6wXwo/?mibextid=YCRy0i',
+            "url": endpoint + '/facebook/video?url=https://www.facebook.com/watch?v=587760489446657',
             "name": "Tải video từ Facebook"
         },
         {
-            "url":endpoint + '/facebook/token?username=< uid >&password=< pass >&twofactor=< 2fa >&_2fa=0',
-            "name": "Get token facebook"
-        }
+            "url": 'https://getid.maihoang04.repl.co/',
+            "name": "Lấy UID Facebook"
+        }       
         ]
     },
     {
+        event: 'HOT',
         name: 'TikTok',
         icon: 'fa-brands fa-tiktok',
         item: [{
-                "url": endpoint + "/tiktok/downloadvideo?url=https://vt.tiktok.com/ZSLRyjNuT/",
-                "name": "Tải video tiktok"
+                "url": endpoint + "/tiktok?url=https://www.tiktok.com/@hd.jrt03/video/7127548660589645083?lang=vi-VN",
+                "name": "TikTok Downloader"
             },
             {
-                "url": endpoint + '/tiktok/downloadvideo?url=https://v.douyin.com/UD4asNJ/',
-                "name": "Tải video douyin"
+                "url": endpoint + '/tiktok/download?link=https://www.tiktok.com/@hd.jrt03/video/7127548660589645083?lang=vi-VN',
+                "name": "Tiktok Downloader 2"
             },   
             {
-                "url": endpoint + "/tiktok/searchvideo?keywords=mixi",
+                "url": endpoint + "/tiktok?search=hd.jrt03",
                 "name": "TikTok Search"
             },
             {
-                "url": endpoint + "/tiktok/trendingtiktok",
+                "url": endpoint + "/tiktok/trending",
                 "name": "TikTok Trending"
             },   
             {
-                "url": endpoint + "/tiktok/infov2?username=mixigaming",
+                "url": endpoint + "/tiktok?username=hd.jrt03",
                 "name": "TikTok Info User"
+            },
+            {
+                "url": endpoint + '/tiktok/info?username=hd.jrt03',
+                "name": "Tiktok Info User 2"
             }   
         ]
     },
     {
-        name: 'Instagram',
-        icon: 'fab fa-instagram-square',
+        event: 'HOT',
+        name: 'Twitter',
+        icon: 'fab fa-twitter-square',
         item: [{
-                "url": endpoint + "/instagram/infouser?ig=mixigaming",
-                "name": "info ins"
-            },
-            {
-                "url": endpoint + "http://instagram/downloadpost?url=https://www.instagram.com/reel/CsrDMiOLgpB/?utm_source=ig_web_copy_link&igshid=MmJiY2I4NDBkZg=="
-                "name": "Tải video ins"
+                "url": endpoint + "/twitter/video?url=https://twitter.com/b_dm12/status/1607003962292711424?s=20&t=CXAPUq93Y7DsHR2ViHXK5w",
+                "name": "Twitter Downloader"
             }
         ]
     },
