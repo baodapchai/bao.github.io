@@ -1,4 +1,4 @@
-endpoint = `https://docs-api.jrtxtracy.repl.co`
+endpoint = `https://api.quangbao.click`
 message_list = [{
     icon: 'fa-solid fa-star-exclamation',
     title: 'Trang web bắt đầu hoạt động',
@@ -12,111 +12,75 @@ item_list = [
         icon: 'fa-solid fa-pen-alt',
         item: [{
             "url": endpoint + '/apikey?type=register&name=${name}',
-            "name": "Get APIKEY Free"
+            "name": "Tạo APIKEY Free"
         },
         {
             "url": endpoint + '/apikey?type=checker&apikey=${apikey}',
             "name": "Check APIKEY"
-        },
-        {
-            "url": 'https://bit.ly/JRTxTracy',
-            "name": "Hướng dẫn tạo API_KEY"
-        },
-        {
-            "url": 'https://i.imgur.com/odcEJWo.png',
-            "name": "Mã QR tạo API_KEY"
         }
         ]
     },
     {
-        event: 'HOT',
-        name: 'Download Video Social',
-        icon: 'fa fa-cloud-download',
-        item: [{
-            "url": 'https://nguyenmanh.name.vn/facebook',
-            "name": "Download Video Facebook"
-        },
-        {
-            "url": 'https://nguyenmanh.name.vn/tiktok',
-            "name": "Download Video Tiktok"
-        },
-        {
-            "url": 'https://nguyenmanh.name.vn/youtube',
-            "name": "Download Video Youtube"
-        },
-        {
-            "url": 'https://nguyenmanh.name.vn/douyin',
-            "name": "Download Video Tiktok Douyin"
-        },
-        {
-            "url": 'https://nguyenmanh.name.vn/videodl',
-            "name": "Download All Video No Logo"
-        }       
-        ]
-    },
-    {
-        event: 'HOT',
         name: 'Facebook',
         icon: 'fa-brands fa-facebook',
         item: [{
-            "url": endpoint + '/facebook/finduid?url=https://www.facebook.com/NHD.JRT.262/',
-            "name": "Find UID"
+            "url": endpoint + '/facebook/finduid?uid=4',
+            "name": "Xem ngày tạo tài khoản"
         },
         {
-            "url": endpoint + '/facebook/info?uid=100033478361032',
-            "name": "Get Info"
+            "url": endpoint + '/facebook/getinfo?uid=4',
+            "name": "Xem Info Facebook"
         },
         {
-            "url": endpoint + '/facebook/video?url=https://www.facebook.com/watch?v=587760489446657',
+            "url": endpoint + '/fbdownload?url=https://fb.watch/kJJaY6wXwo/?mibextid=YCRy0i',
             "name": "Tải video từ Facebook"
         },
         {
-            "url": 'https://getid.maihoang04.repl.co/',
-            "name": "Lấy UID Facebook"
-        }       
+            "url":endpoint + '/facebook/token?username=< uid >&password=< pass >&twofactor=< 2fa >&_2fa=0',
+            "name": "Get token facebook"
+        }
         ]
     },
     {
-        event: 'HOT',
         name: 'TikTok',
         icon: 'fa-brands fa-tiktok',
         item: [{
-                "url": endpoint + "/tiktok?url=https://www.tiktok.com/@hd.jrt03/video/7127548660589645083?lang=vi-VN",
-                "name": "TikTok Downloader"
+                "url": endpoint + "/tiktok/downloadvideo?url=https://vt.tiktok.com/ZSLRyjNuT/",
+                "name": "Tải video tiktok"
             },
             {
-                "url": endpoint + '/tiktok/download?link=https://www.tiktok.com/@hd.jrt03/video/7127548660589645083?lang=vi-VN',
-                "name": "Tiktok Downloader 2"
+                "url": endpoint + '/tiktok/downloadvideo?url=https://v.douyin.com/UD4asNJ/',
+                "name": "Tải video douyin"
             },   
             {
-                "url": endpoint + "/tiktok?search=hd.jrt03",
+                "url": endpoint + "/tiktok/searchvideo?keywords=mixi",
                 "name": "TikTok Search"
             },
             {
-                "url": endpoint + "/tiktok/trending",
+                "url": endpoint + "/tiktok/trendingtiktok",
                 "name": "TikTok Trending"
             },   
             {
-                "url": endpoint + "/tiktok?username=hd.jrt03",
+                "url": endpoint + "/tiktok/infov2?username=mixigaming",
                 "name": "TikTok Info User"
-            },
-            {
-                "url": endpoint + '/tiktok/info?username=hd.jrt03',
-                "name": "Tiktok Info User 2"
             }   
         ]
     },
     {
-        event: 'HOT',
-        name: 'Twitter',
-        icon: 'fab fa-twitter-square',
+        name: 'Instagram',
+        icon: 'fab fa-instagram-square',
         item: [{
-                "url": endpoint + "/twitter/video?url=https://twitter.com/b_dm12/status/1607003962292711424?s=20&t=CXAPUq93Y7DsHR2ViHXK5w",
-                "name": "Twitter Downloader"
+                "url": endpoint + "/instagram/infouser?ig=mixigaming",
+                "name": "info ins"
+            },
+            {
+                "url": endpoint + "http://instagram/downloadpost?url=https://www.instagram.com/reel/CsrDMiOLgpB/?utm_source=ig_web_copy_link&igshid=MmJiY2I4NDBkZg=="
+                "name": "Tải video ins"
             }
         ]
     },
     {
+         event: 'HOT',
         name: 'Tạo avatar anime',
         icon: 'fa-solid fa-user-tie',
         item: [{
@@ -124,15 +88,23 @@ item_list = [
                 "name": "Danh sách nhân vật"
             },
             {
-                "url": endpoint + "/taoanhdep/search?key=Pika",
+                "url": endpoint + "/taoanhdep/search?type=name&name=nobita",
                 "name": "Tìm kiếm nhân vật theo tên"
+            },
+            {
+                "url": endpoint + "/taoanhdep/search?type=id&id=30",
+                "name": "Tìm kiếm nhân vật theo ID"
+            },
+            {
+                "url": endpoint + "/taoanhdep/search?type=movie&movie=Conan",
+                "name": "Tìm kiếm nhân vật theo tên phim"
             },
             {
                 "url": endpoint + "/taoanhdep/data",
                 "name": "Dữ liệu avatar anime"
             },   
             {
-                "url": endpoint + "/canvas/avatarwibu?id=2&chu_nen=quangbao&chu_ky=nguyenbao",
+                "url": endpoint + "/taoanhdep/avatarwibu?id=1&chu_nen=Nguyễn Hải Đăng&chu_ky=J-JRT",
                 "name": "Tạo avatar"
             }
         ]
@@ -142,7 +114,7 @@ item_list = [
         name: 'Code',
         icon: 'fa-solid fa-code',
         item: [{
-                "url": 'https://deobfuscate.api.quangbao.click',
+                "url": 'https://deobfuscate.jrtxtracy.repl.co/',
                 "name": "Deobfuscate"
             },
             {
@@ -152,83 +124,44 @@ item_list = [
         ]
     },
     {
+        event: 'HOT',
         name: 'Canvas',
         icon: 'fa-solid fa-diagram-lean-canvas',
         item: [{
-                "url": endpoint + "/blink?id=4,1540670681&delay=500",
+                "url": endpoint + "/blink?id=100033478361032,100022113516016&delay=500",
                 "name": "Blink"
             },
             {
-                "url": endpoint + "/fbcover/v1?name=Nguyen%20Bảo&uid=100012199992153&address=Quảng%20Trị&email=113@gmail.com&subname=nguyenbao&sdt=113&color=pink",
+                "url": endpoint + "/fbcover/v1?name=Nguyễn Hải Đăng&color=no&address=VietNam&email=dangz123456789z@gmail.com&subname=J-JRT&sdt=0396049649&uid=100033478361032",
                 "name": "Facebook Cover v1"
             },
             {
-                "url": endpoint + "/fbcover/v2?name=Quangbao&id=1&subname=nguyenbao",
+                "url": endpoint + "/fbcover/v2?name=Nguyễn Hải Đăng&color=no&subname=J-JRT&id=100",
                 "name": "Facebook Cover v2"
             },
             {
-                "url": endpoint + "/fbcover/v3?name=Nguyễn%20Quang%20Bảo&birthday=14/07&love=Bảo%20Dz&location=Quảng%20Trị&hometown=Quảng%20Trị&follow=9999999999&gender=Nữ&uid=100012199992153",
+                "url": endpoint + "/fbcover/v3?name=Nguyễn Hải Đăng&birthday=26/02/2003&love=Hà Nhung&location=VietNam&hometown=VietNam&follow=15000000&gender=Nam&uid=100033478361032",
                 "name": "Facebook Cover v3"
             },
             {
-                "url": endpoint + "/lienquan?id=45&word=quangbao",
-                "name": "Liên quân"
+                "url": endpoint + "/tiki?text=Nguyễn Hải Đăng",
+                "name": "Đi cùng Tiki"
             },
             {
-                "url": endpoint + "/cccd?text1=bao&text2=bao&text3=dz&text4=fuho&urlimg=https://i.imgur.com/p9wciqt.jpg",
+                "url": endpoint + "/cccd?text1=Nguyễn%20Hải%20Đăng&text2=26/02/2003&text3=Nam&text4=TPHCM&urlimg=https://i.ibb.co/F0Y0rFr/279917930-5866733526676879-1511731601410750983-n.jpg",
                 "name": "Fake CCCD"
             },   
             {
-                "url": endpoint + "/thuphap?id=1&sodong=3&dong_1=Nguyễn&dong_2=Minh&dong_3=Bảo",
+                "url": endpoint + "/thuphap?id=1&sodong=1&dong_1=Nguyễn Hải Đăng",
                 "name": "Chữ Thư Pháp"
             },
             {
-                "url": endpoint + "/giangsinh?text=nguyenbao",
+                "url": endpoint + "/giangsinh?text=Hải Đăng",
                 "name": "Giáng Sinh"
             },
             {
-                "url": endpoint + "/shopmaihuong?text1=quangbao&text2=0258965JQK",
+                "url": endpoint + "/shopmaihuong?text1=Nguyễn Hải Đăng&text2=0396049649",
                 "name": "Shop Mike Hường"
-            },
-            {
-                "url": endpoint + "/anhbia?name=nguyen%20bao&age=2009",
-                "name": "Ảnh bìa"
-            },
-            {
-                "url": endpoint + "/bannertc?kieu=1&age=2009&name=nguyen%20bao",
-                "name": "Ảnh bìa chữ ký"
-            },
-            {
-                "url": endpoint + "/bannertc2?age=2009&name=Bảo%20DeepTry&text=nguyenbao",
-                "name": "Ảnh bìa chữ ký v2"
-            },
-            {
-                "url": endpoint + "/cardinfo?location=Quảng%20Trị&name=nguyenbao&gender=Nam&vanity=nguyenbao.03&uid=100012199992153&chuky=NguyenBao",
-                "name": "cardinfo"
-            },
-            {
-                "url": endpoint + "/ggsaid?name=nguyenbao",
-                "name": "GG said"
-            },
-            {
-                "url": endpoint + "/hn2022?&name=Nguyễn%20Quang%20Bảo&kieu=2&uid=100012199992153",
-                "name": "lixi"
-            },
-            {
-                "url": endpoint + "/m2022?&name=Nguyễn%20Quang%20Bảo&uid=100012199992153",
-                "name": "bìa tết"
-            },
-            {
-                "url": endpoint + "/mkt?text1=Nguyễn%20Quang%20Bảo&text2=Bảo%20Dz&fb=nguyenbao&ma=xxx@gmail.com&tl=113&lc=Quảng%20Trị&uid=100012199992153",
-                "name": "bìa mkt"
-            },
-            {
-                "url": endpoint + "/tad?color1=red&color2=blue&tenchinh=Nguyễn%20Quang%20Bảo&ten_phu=Bảo%2004",
-                "name": "bìa logo"
-            },
-            {
-                "url": endpoint + "/tichxanh?kieu=2&uid=100012199992153&name=NguyenBao",
-                "name": "tích xanh"
             }
         ]
     },
@@ -251,7 +184,7 @@ item_list = [
         name: 'Uptime Robot',
         icon: 'fa-solid fa-robot-astromech',
         item: [{
-                "url": endpoint + '/uptimerobot/create?url=https://api.quangbao.click',
+                "url": endpoint + '/uptimerobot/create?url=https://JRTmain-2.ChuonCa.repl.co/&name=ChuonCa',
                 "name": "Uptime Create"
             }
         ]
