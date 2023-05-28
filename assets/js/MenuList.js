@@ -631,7 +631,7 @@ item_list = [
             {
                 "url": endpoint + '/img/wallpaper?q=pokemon',
                 "name": "wallpaper"
-            }
+            },
             {
                 "url": endpoint + '/img/wallpaperv2?q=raiden&page=1',
                 "name": "wallpaper2"
