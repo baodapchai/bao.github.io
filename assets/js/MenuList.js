@@ -1,4 +1,4 @@
-endpoint = `https://api.quangbao.click`
+endpoint = `https://docs-api.jrtxtracy.repl.co`
 message_list = [{
     icon: 'fa-solid fa-star-exclamation',
     title: 'Trang web bắt đầu hoạt động',
@@ -12,74 +12,112 @@ item_list = [
         icon: 'fa-solid fa-pen-alt',
         item: [{
             "url": endpoint + '/apikey?type=register&name=${name}',
-            "name": "Tạo APIKEY Free"
+            "name": "Get APIKEY Free"
         },
         {
             "url": endpoint + '/apikey?type=checker&apikey=${apikey}',
             "name": "Check APIKEY"
+        },
+        {
+            "url": 'https://bit.ly/JRTxTracy',
+            "name": "Hướng dẫn tạo API_KEY"
+        },
+        {
+            "url": 'https://i.imgur.com/odcEJWo.png',
+            "name": "Mã QR tạo API_KEY"
         }
         ]
     },
     {
+        event: 'HOT',
+        name: 'Download Video Social',
+        icon: 'fa fa-cloud-download',
+        item: [{
+            "url": 'https://nguyenmanh.name.vn/facebook',
+            "name": "Download Video Facebook"
+        },
+        {
+            "url": 'https://nguyenmanh.name.vn/tiktok',
+            "name": "Download Video Tiktok"
+        },
+        {
+            "url": 'https://nguyenmanh.name.vn/youtube',
+            "name": "Download Video Youtube"
+        },
+        {
+            "url": 'https://nguyenmanh.name.vn/douyin',
+            "name": "Download Video Tiktok Douyin"
+        },
+        {
+            "url": 'https://nguyenmanh.name.vn/videodl',
+            "name": "Download All Video No Logo"
+        }       
+        ]
+    },
+    {
+        event: 'HOT',
         name: 'Facebook',
         icon: 'fa-brands fa-facebook',
         item: [{
-            "url": endpoint + '/facebook/finduid?uid=4',
-            "name": "Xem ngày tạo tài khoản"
+            "url": endpoint + '/facebook/finduid?url=https://www.facebook.com/NHD.JRT.262/',
+            "name": "Find UID"
         },
         {
-            "url": endpoint + '/facebook/getinfo?uid=4',
-            "name": "Xem Info Facebook"
+            "url": endpoint + '/facebook/info?uid=100033478361032',
+            "name": "Get Info"
         },
         {
-            "url": endpoint + '/fbdownload?url=https://fb.watch/kJJaY6wXwo/?mibextid=YCRy0i',
+            "url": endpoint + '/facebook/video?url=https://www.facebook.com/watch?v=587760489446657',
             "name": "Tải video từ Facebook"
         },
         {
-            "url":endpoint + '/facebook/token?username=< uid >&password=< pass >&twofactor=< 2fa >&_2fa=0',
-            "name": "Get token facebook"
-        }
+            "url": 'https://getid.maihoang04.repl.co/',
+            "name": "Lấy UID Facebook"
+        }       
         ]
     },
     {
+        event: 'HOT',
         name: 'TikTok',
         icon: 'fa-brands fa-tiktok',
         item: [{
-                "url": endpoint + "/tiktok/downloadvideo?url=https://vt.tiktok.com/ZSLRyjNuT/",
-                "name": "Tải video tiktok"
+                "url": endpoint + "/tiktok?url=https://www.tiktok.com/@hd.jrt03/video/7127548660589645083?lang=vi-VN",
+                "name": "TikTok Downloader"
             },
             {
-                "url": endpoint + '/tiktok/downloadvideo?url=https://v.douyin.com/UD4asNJ/',
-                "name": "Tải video douyin"
+                "url": endpoint + '/tiktok/download?link=https://www.tiktok.com/@hd.jrt03/video/7127548660589645083?lang=vi-VN',
+                "name": "Tiktok Downloader 2"
             },   
             {
-                "url": endpoint + "/tiktok/searchvideo?keywords=mixi",
+                "url": endpoint + "/tiktok?search=hd.jrt03",
                 "name": "TikTok Search"
             },
             {
-                "url": endpoint + "/tiktok/trendingtiktok",
+                "url": endpoint + "/tiktok/trending",
                 "name": "TikTok Trending"
             },   
             {
-                "url": endpoint + "/tiktok/infov2?username=mixigaming",
+                "url": endpoint + "/tiktok?username=hd.jrt03",
                 "name": "TikTok Info User"
+            },
+            {
+                "url": endpoint + '/tiktok/info?username=hd.jrt03',
+                "name": "Tiktok Info User 2"
             }   
         ]
     },
     {
-        name: 'Instagram',
-        icon: 'fab fa-instagram-square',
+        event: 'HOT',
+        name: 'Twitter',
+        icon: 'fab fa-twitter-square',
         item: [{
-                "url": endpoint + "/instagram/infouser?ig=mixigaming",
-                "name": "info ins"
-            },
-            {
-                "url": endpoint + "http://instagram/downloadpost?url=https://www.instagram.com/reel/CsrDMiOLgpB/?utm_source=ig_web_copy_link&igshid=MmJiY2I4NDBkZg=="
-                "name": "Tải video ins"
+                "url": endpoint + "/twitter/video?url=https://twitter.com/b_dm12/status/1607003962292711424?s=20&t=CXAPUq93Y7DsHR2ViHXK5w",
+                "name": "Twitter Downloader"
             }
         ]
     },
     {
+        event: 'HOT',
         name: 'Tạo avatar anime',
         icon: 'fa-solid fa-user-tie',
         item: [{
@@ -87,15 +125,23 @@ item_list = [
                 "name": "Danh sách nhân vật"
             },
             {
-                "url": endpoint + "/taoanhdep/search?key=Pika",
+                "url": endpoint + "/taoanhdep/search?type=name&name=nobita",
                 "name": "Tìm kiếm nhân vật theo tên"
+            },
+            {
+                "url": endpoint + "/taoanhdep/search?type=id&id=30",
+                "name": "Tìm kiếm nhân vật theo ID"
+            },
+            {
+                "url": endpoint + "/taoanhdep/search?type=movie&movie=Conan",
+                "name": "Tìm kiếm nhân vật theo tên phim"
             },
             {
                 "url": endpoint + "/taoanhdep/data",
                 "name": "Dữ liệu avatar anime"
             },   
             {
-                "url": endpoint + "/canvas/avatarwibu?id=2&chu_nen=quangbao&chu_ky=nguyenbao",
+                "url": endpoint + "/taoanhdep/avatarwibu?id=1&chu_nen=Nguyễn Hải Đăng&chu_ky=J-JRT",
                 "name": "Tạo avatar"
             }
         ]
@@ -105,7 +151,7 @@ item_list = [
         name: 'Code',
         icon: 'fa-solid fa-code',
         item: [{
-                "url": 'https://deobfuscate.api.quangbao.click',
+                "url": 'https://deobfuscate.jrtxtracy.repl.co/',
                 "name": "Deobfuscate"
             },
             {
@@ -115,83 +161,44 @@ item_list = [
         ]
     },
     {
+        event: 'HOT',
         name: 'Canvas',
         icon: 'fa-solid fa-diagram-lean-canvas',
         item: [{
-                "url": endpoint + "/blink?id=4,1540670681&delay=500",
+                "url": endpoint + "/blink?id=100033478361032,100022113516016&delay=500",
                 "name": "Blink"
             },
             {
-                "url": endpoint + "/fbcover/v1?name=Nguyen%20Bảo&uid=100012199992153&address=Quảng%20Trị&email=113@gmail.com&subname=nguyenbao&sdt=113&color=pink",
+                "url": endpoint + "/fbcover/v1?name=Nguyễn Hải Đăng&color=no&address=VietNam&email=dangz123456789z@gmail.com&subname=J-JRT&sdt=0396049649&uid=100033478361032",
                 "name": "Facebook Cover v1"
             },
             {
-                "url": endpoint + "/fbcover/v2?name=Quangbao&id=1&subname=nguyenbao",
+                "url": endpoint + "/fbcover/v2?name=Nguyễn Hải Đăng&color=no&subname=J-JRT&id=100",
                 "name": "Facebook Cover v2"
             },
             {
-                "url": endpoint + "/fbcover/v3?name=Nguyễn%20Quang%20Bảo&birthday=14/07&love=Bảo%20Dz&location=Quảng%20Trị&hometown=Quảng%20Trị&follow=9999999999&gender=Nữ&uid=100012199992153",
+                "url": endpoint + "/fbcover/v3?name=Nguyễn Hải Đăng&birthday=26/02/2003&love=Hà Nhung&location=VietNam&hometown=VietNam&follow=15000000&gender=Nam&uid=100033478361032",
                 "name": "Facebook Cover v3"
             },
             {
-                "url": endpoint + "/lienquan?id=45&word=quangbao",
-                "name": "Liên quân"
+                "url": endpoint + "/tiki?text=Nguyễn Hải Đăng",
+                "name": "Đi cùng Tiki"
             },
             {
-                "url": endpoint + "/cccd?text1=bao&text2=bao&text3=dz&text4=fuho&urlimg=https://i.imgur.com/p9wciqt.jpg",
+                "url": endpoint + "/cccd?text1=Nguyễn%20Hải%20Đăng&text2=26/02/2003&text3=Nam&text4=TPHCM&urlimg=https://i.ibb.co/F0Y0rFr/279917930-5866733526676879-1511731601410750983-n.jpg",
                 "name": "Fake CCCD"
             },   
             {
-                "url": endpoint + "/thuphap?id=1&sodong=3&dong_1=Nguyễn&dong_2=Minh&dong_3=Bảo",
+                "url": endpoint + "/thuphap?id=1&sodong=1&dong_1=Nguyễn Hải Đăng",
                 "name": "Chữ Thư Pháp"
             },
             {
-                "url": endpoint + "/giangsinh?text=nguyenbao",
+                "url": endpoint + "/giangsinh?text=Hải Đăng",
                 "name": "Giáng Sinh"
             },
             {
-                "url": endpoint + "/shopmaihuong?text1=quangbao&text2=0258965JQK",
+                "url": endpoint + "/shopmaihuong?text1=Nguyễn Hải Đăng&text2=0396049649",
                 "name": "Shop Mike Hường"
-            },
-            {
-                "url": endpoint + "/anhbia?name=nguyen%20bao&age=2009",
-                "name": "Ảnh bìa"
-            },
-            {
-                "url": endpoint + "/bannertc?kieu=1&age=2009&name=nguyen%20bao",
-                "name": "Ảnh bìa chữ ký"
-            },
-            {
-                "url": endpoint + "/bannertc2?age=2009&name=Bảo%20DeepTry&text=nguyenbao",
-                "name": "Ảnh bìa chữ ký v2"
-            },
-            {
-                "url": endpoint + "/cardinfo?location=Quảng%20Trị&name=nguyenbao&gender=Nam&vanity=nguyenbao.03&uid=100012199992153&chuky=NguyenBao",
-                "name": "cardinfo"
-            },
-            {
-                "url": endpoint + "/ggsaid?name=nguyenbao",
-                "name": "GG said"
-            },
-            {
-                "url": endpoint + "/hn2022?&name=Nguyễn%20Quang%20Bảo&kieu=2&uid=100012199992153",
-                "name": "lixi"
-            },
-            {
-                "url": endpoint + "/m2022?&name=Nguyễn%20Quang%20Bảo&uid=100012199992153",
-                "name": "bìa tết"
-            },
-            {
-                "url": endpoint + "/mkt?text1=Nguyễn%20Quang%20Bảo&text2=Bảo%20Dz&fb=nguyenbao&ma=xxx@gmail.com&tl=113&lc=Quảng%20Trị&uid=100012199992153",
-                "name": "bìa mkt"
-            },
-            {
-                "url": endpoint + "/tad?color1=red&color2=blue&tenchinh=Nguyễn%20Quang%20Bảo&ten_phu=Bảo%2004",
-                "name": "bìa logo"
-            },
-            {
-                "url": endpoint + "/tichxanh?kieu=2&uid=100012199992153&name=NguyenBao",
-                "name": "tích xanh"
             }
         ]
     },
@@ -214,12 +221,13 @@ item_list = [
         name: 'Uptime Robot',
         icon: 'fa-solid fa-robot-astromech',
         item: [{
-                "url": endpoint + '/uptimerobot/create?url=https://api.quangbao.click',
+                "url": endpoint + '/uptimerobot/create?url=https://JRTmain-2.ChuonCa.repl.co/&name=ChuonCa',
                 "name": "Uptime Create"
             }
         ]
     },
     {
+        event: 'HOT',
         name: 'SoundCloud',
         icon: 'fa-brands fa-soundcloud',
         item: [{
@@ -251,6 +259,7 @@ item_list = [
         ]
     },
     {
+        event: 'HOT',
         name: 'Youtube',
         icon: 'fa-brands fa-youtube',
         item: [{
@@ -342,6 +351,16 @@ item_list = [
         ]
     },
     {
+        event: 'HOT',
+        name: 'Short Url',
+        icon: 'fa-solid fa-curling-stone',
+        item: [{
+            "url": endpoint + '/slink?url=https://www.youtube.com/watch?v=Jk38OqdAQxc',
+            "name": "Short Url"
+        }]
+    },
+    {
+        event: 'HOT',
         name: 'Pinterest',
         icon: 'fa-brands fa-pinterest',
         item: [{
@@ -350,34 +369,144 @@ item_list = [
         }]
     },
     {
+        event: 'HOT',
+        name: 'Câu nói',
+        icon: 'fa fa-list-alt',
+        item: [{
+            "url": endpoint + '/saying/hearing?apikey=điền api_key vào đây',
+            "name": "Câu thính"
+        },
+        {
+            "url": endpoint + '/saying/cadao?apikey=điền api_key vào đây',
+            "name": "Câu ca dao"
+        },
+        {
+            "url": endpoint + '/saying/bancobiet?apikey=điền api_key vào đây',
+            "name": "Bạn có biết ?"
+        },
+        {
+            "url": endpoint + '/saying/danhngon?apikey=điền api_key vào đây',
+            "name": "Câu danh ngôn"
+        }       
+        ]
+    },
+    {
         event:'HOT',
         name: 'Random Videos',
         icon: 'fas fa-video',
         item: [{
             "event": 'HOT',
-            "url": endpoint + '/images/videogaixinh',
+            "url": endpoint + '/video/gaixinh?apikey=điền api_key vào đây',
             "name": "Gái xinh"
         },
             {
                 "event": 'HOT',
-                "url": endpoint + '/images/animevd',
+                "url": endpoint + '/video/anime?apikey=điền api_key vào đây',
                 "name": "Anime"
             },
                {
                 "event": 'NSFW',
-                "url": endpoint + '/images/videosex',
+                "url": endpoint + '/video/sex?apikey=điền api_key vào đây',
                 "name": "Sex 18+"
             },
-               {
-                "event": 'NSFW',
-                "url": endpoint + '/images/videochill',
-                "name": "video chill"
+            {
+                "url": endpoint + '/video/chill?apikey=điền api_key vào đây',
+                "name": "Nhạc Chill"
             },
-               {
-                "event": 'NSFW',
-                "url": endpoint + '/images/autosend',
-                "name": "autosend"
-            }
+            {
+                "url": endpoint + '/video/doraemon?apikey=điền api_key vào đây',
+                "name": "Doraemon"
+            },
+            {
+                "url": endpoint + '/video/genshin?apikey=điền api_key vào đây',
+                "name": "Genshin"
+            },
+            {
+                "url": endpoint + '/video/goku?apikey=điền api_key vào đây',
+                "name": "Goku"
+            },
+            {
+                "url": endpoint + '/video/nhacmoingay?apikey=điền api_key vào đây',
+                "name": "Nhạc hay"
+            },
+            {
+                "url": endpoint + '/video/nhacytb?apikey=điền api_key vào đây',
+                "name": "Nhạc YTB"
+            },
+            {
+                "url": endpoint + '/video/soundcl?apikey=điền api_key vào đây',
+                "name": "Nhạc Soundcloud"
+            }   
+        ]
+    },
+    {
+        event: 'HOT',
+        name: 'NSFW',
+        icon: 'fas fa-user-secret',
+        item: [{
+            "url": endpoint + '/nsfw/ausand?apikey=điền api_key vào đây',
+            "name": "Ausand"
+        },
+        {
+            "url": endpoint + '/nsfw/butter?apikey=điền api_key vào đây',
+            "name": "Butter"
+        },
+        {
+            "url": endpoint + '/nsfw/xnxx?apikey=điền api_key vào đây',
+            "name": "Xnxx"
+        },       
+        {
+            "url": endpoint + '/nsfw/hentaiz?apikey=điền api_key vào đây',
+            "name": "Hentaiz"
+        },       
+        {
+            "url": endpoint + '/nsfw/du?apikey=điền api_key vào đây',
+            "name": "Ngực"
+        },     
+        {
+            "url": endpoint + '/nsfw/gaisexy?apikey=điền api_key vào đây',
+            "name": "Gái Sexy"
+        },   
+        {
+            "url": endpoint + '/nsfw/hana?apikey=điền api_key vào đây',
+            "name": "Hana"
+        },     
+        {
+            "url": endpoint + '/nsfw/ig?apikey=điền api_key vào đây',
+            "name": "Instagram"
+        },       
+        {
+            "url": endpoint + '/nsfw/mong?apikey=điền api_key vào đây',
+            "name": "Mông"
+        },     
+        {
+            "url": endpoint + '/nsfw/naughty?apikey=điền api_key vào đây',
+            "name": "Naughty"
+        },  
+        {
+            "url": endpoint + '/nsfw/nsfw?apikey=điền api_key vào đây',
+            "name": "NSFW"
+        }, 
+        {
+            "url": endpoint + '/nsfw/nude?apikey=điền api_key vào đây',
+            "name": "Nude"
+        },       
+        {
+            "url": endpoint + '/nsfw/penissucking?apikey=điền api_key vào đây',
+            "name": "Penissucking"
+        },       
+        {
+            "url": endpoint + '/nsfw/sex?apikey=điền api_key vào đây',
+            "name": "Sex 18+"
+        },       
+        {
+            "url": endpoint + '/nsfw/tw?apikey=điền api_key vào đây',
+            "name": "Twitter"
+        },       
+        {
+            "url": endpoint + '/nsfw/vsbg?apikey=điền api_key vào đây',
+            "name": "VSBG"
+        },       
         ]
     },
     {
@@ -385,143 +514,145 @@ item_list = [
         name: 'Random Images',
         icon: 'fa-solid fa-images',
         item: [{
-                "event": 'NSFW',
-                "url": endpoint + '/images/ausand',
-                "name": "Ausand"
-            },
-            {
-                "event": 'NSFW',
-                "url": endpoint + '/images/du',
-                "name": "Ngực"
-            },
-            {
-                "event": 'HOT',
-                "url": endpoint + '/images/anime',
+                "url": endpoint + '/images/anime?apikey=điền api_key vào đây',
                 "name": "Anime"
             },
             {
-                "event": 'NSFW',
-                "url": endpoint + '/images/chitanda',
+                "url": endpoint + '/images/animememe?apikey=điền api_key vào đây',
+                "name": "Anime Meme"
+            },
+            {
+                "url": endpoint + '/images/animev2?apikey=điền api_key vào đây',
+                "name": "Anime v2"
+            },
+            {
+                "url": endpoint + '/images/avatar?apikey=điền api_key vào đây',
+                "name": "Avatar"
+            },
+            {
+                "url": endpoint + '/images/capdoi?apikey=điền api_key vào đây',
+                "name": "Cặp đôi"
+            },
+            {
+                "url": endpoint + '/images/cosplay?apikey=điền api_key vào đây',
+                "name": "Cosplay"
+            },
+            {
+                "url": endpoint + '/images/gainhat?apikey=điền api_key vào đây',
+                "name": "Gái nhật"
+            },
+            {
+                "url": endpoint + '/images/gaixinhvn?apikey=điền api_key vào đây',
+                "name": "Gái xinh VN"
+            },
+            {
+                "url": endpoint + '/images/ghost?apikey=điền api_key vào đây',
+                "name": "Ghost"
+            },
+            {
+                "url": endpoint + '/images/girl?apikey=điền api_key vào đây',
+                "name": "Gái"
+            },   
+            {
+                "url": endpoint + '/images/hoathinh?apikey=điền api_key vào đây',
+                "name": "Cartoon Network"
+            },
+            {
+                "url": endpoint + '/images/jack?apikey=điền api_key vào đây',
+                "name": "Jack (J97)"
+            },
+            {
+                "url": endpoint + '/images/jimmy?apikey=điền api_key vào đây',
+                "name": "Jimmy"
+            },
+            {
+                "url": endpoint + '/images/khanhhuyen?apikey=điền api_key vào đây',
+                "name": "Khánh Huyền"
+            },
+            {
+                "url": endpoint + '/images/lebong?apikey=điền api_key vào đây',
+                "name": "Lê Bống"
+            },
+            {
+                "url": endpoint + '/images/lienquan?apikey=điền api_key vào đây',
+                "name": "Liên Quân"
+            },
+            {
+                "url": endpoint + '/images/lnd?apikey=điền api_key vào đây',
+                "name": "Linh Ngọc Đàm"
+            },   
+            {
+                "url": endpoint + '/images/nendienthoai?apikey=điền api_key vào đây',
+                "name": "Nền Điện Thoại"
+            },
+            {
+                "url": endpoint + '/images/ngoctrinh?apikey=điền api_key vào đây',
+                "name": "Ngọc Trinh"
+            },
+            {
+                "url": endpoint + '/images/tokyo?apikey=điền api_key vào đây',
+                "name": "Tokyo Revengers"
+            },
+            {
+                "url": endpoint + '/images/trai?apikey=điền api_key vào đây',
+                "name": "Trai"
+            },
+            {
+                "url": endpoint + '/images/wallpaper?apikey=điền api_key vào đây',
+                "name": "Wallpaper"
+            },
+            {
+                "url": endpoint + '/images/aqua?apikey=điền api_key vào đây',
+                "name": "Aqua"
+            },   
+            {
+                "url": endpoint + '/images/chitanda?apikey=điền api_key vào đây',
                 "name": "Chitanda"
-            },   
-            {
-                "event": 'NSFW',
-                "url": endpoint + '/images/kawaii',
-                "name": "kawaii"
             },
             {
-                "event": 'NSFW',
-                "url": endpoint + '/images/girl',
-                "name": "Girl"
-            },
-            {
-                "event": 'NSFW',
-                "url": endpoint + '/images/mong',
-                "name": "Mông"
-            },
-            {
-                "event": 'NSFW',
-                "url": endpoint + '/images/gura',
-                "name": "gura"
-            },   
-            {
-                "event": 'HOT',
-                "url": endpoint + '/images/couple',
-                "name": "couple"
-            },
-            {
-                "event": 'HOT',
-                "url": endpoint + '/images/ppcouple',
-                "name": "ppcouple"
-            },
-            {
-                "event": 'HOT',
-                "url": endpoint + '/images/gentle',
-                "name": "gentle"
-            },
-            {
-                "event": 'HOT',
-                "url": endpoint + '/images/kana',
+                "url": endpoint + '/images/kana?apikey=điền api_key vào đây',
                 "name": "Kana"
             },
             {
-                "event": 'HOT',
-                "url": endpoint + '/images/girlsexy',
-                "name": "girlsexy"
+                "url": endpoint + '/images/kurumi?apikey=điền api_key vào đây',
+                "name": "Kurumi"
             },
             {
-                "event": 'HOT',
-                "url": endpoint + '/images/hentai',
-                "name": "hentai"
+                "url": endpoint + '/images/loli?apikey=điền api_key vào đây',
+                "name": "Loli"
+            },  
+            {
+                "url": endpoint + '/images/lolicon?apikey=điền api_key vào đây',
+                "name": "Lolicon"
             },
-             {
-                "event": 'HOT',
-                "url": endpoint + '/images/itachi',
-                "name": "itachi"
-            },  
             {
-                "event": 'HOT',
-                "url": endpoint + '/images/loli',
-                "name": "Anime Loli"
-            },  
-            {
-                "event": 'HOT',
-                "url": endpoint + '/images/lucy',
+                "url": endpoint + '/images/lucy?apikey=điền api_key vào đây',
                 "name": "Lucy"
-            },
-            {
-                "event": 'HOT',
-                "url": endpoint + '/images/Mirai',
-                "name": "Mirai"
             },  
             {
-                "event": 'NSFW',
-                "url": endpoint + '/images/Naughty',
-                "name": "Naughty"
-            },
+                "url": endpoint + '/images/mirai?apikey=điền api_key vào đây',
+                "name": "Mirai"
+            }, 
             {
-                "event": 'NSFW 18+',
-                "url": endpoint + '/images/meme',
-                "name": "meme"
-            },
-            {
-                "event": 'HOT',
-                "url": endpoint + '/images/wibu',
-                "name": "wibu"
-            },
-            {
-                "event": 'HOT',
-                "url": endpoint + '/images/saumui',
-                "name": "saumui"
-            },
-            {
-                "event": 'HOT',
-                "url": endpoint + '/images/trai',
-                "name": "trai"
+                "url": endpoint + '/images/rem?apikey=điền api_key vào đây',
+                "name": "Rem"
             },   
             {
-                "event": 'HOT',
-                "url": endpoint + '/images/anime',
-                "name": "Anime"
-            },
+                "url": endpoint + '/images/sagiri?apikey=điền api_key vào đây',
+                "name": "Sagiri"
+            },  
             {
-                "event": 'HOT',
-                "url": endpoint + '/images/tw',
-                "name": "tw"
-            },
+                "url": endpoint + '/images/siesta?apikey=điền api_key vào đây',
+                "name": "Siesta"
+            },   
             {
-                "event": 'HOT',
-                "url": endpoint + '/images/cosplay',
-                "name": "Cosplay"
-            },
-               {
-                "event": 'HOT',
-                "url": endpoint + '/images/trai',
-                "name": "Trai"
+                "url": endpoint + '/images/umaru?apikey=điền api_key vào đây',
+                "name": "Umaru"
             }
         ]
     },
     {
+        event: 'HOT',
         name: 'Simsimi',
         icon: 'fa-solid fa-message-bot',
         item: [{
@@ -535,22 +666,19 @@ item_list = [
         ]
     },
     {
+        event: 'HOT',
         name: 'Games',
         icon: 'fa-solid fa-gamepad',
         item: [{
-                "url": endpoint + '/game/pubg',
-                "name": "PUBG"
+                "url": endpoint + '/game/dovui',
+                "name": "Đố vui"
             },
             {
                 "url": endpoint + '/game/dovuiv2',
                 "name": "Đố vui 2"
             },
             {
-                "url": endpoint + '/game/dovuilq',
-                "name": "Đố vui LQ"
-            },
-            {
-                "url": endpoint + '/game/dhbcv𝟯',
+                "url": endpoint + '/game/dhbc',
                 "name": "Đuổi hình bắt chữ"
             },
             {
@@ -558,19 +686,43 @@ item_list = [
                 "name": "Đuổi hình bắt chữ 1"
             },
             {
+                "url": endpoint + '/game/dhbcv1',
+                "name": "Đuổi hình bắt chữ 2"
+            },
+            {
+                "url": endpoint + '/game/dhbcemj',
+                "name": "Đuổi hình bắt chữ Emoji"
+            },
+            {
+                "url": endpoint + '/game/lienquanquiz',
+                "name": "Đố vui Liên Quân"
+            },
+            {
                 "url": endpoint + '/game/linkword?word=ngu ngốc',
                 "name": "Nối từ"
             },
             {
-                "url": endpoint + '/game/csgo',
-                "name": "CSGO"
+                "url": endpoint + '/game/csgo_grenade',
+                "name": "CSGO v1"
+            },
+            {
+                "url": endpoint + '/game/csgo_heavy',
+                "name": "CSGO v2"
+            },
+            {
+                "url": endpoint + '/game/csgo_knift',
+                "name": "CSGO v3"
+            },
+            {
+                "url": endpoint + '/game/csgo_random',
+                "name": "CSGO v4"
             },
             {
                 "url": endpoint + '/game/taixiu',
                 "name": "Tài xỉu"
             },
             {
-                "url": endpoint + '/game/taixiuv2',
+                "url": endpoint + '/game/v2/taixiu',
                 "name": "Tài xỉu 2"
             },
             {
@@ -578,7 +730,7 @@ item_list = [
                 "name": "Vua tiếng Việt"
             },
             {
-                "url": endpoint + '/game/vuatiengviet/image?word=ngu ngốc',
+                "url": endpoint + '/vuatiengviet/image?word=ngu ngốc',
                 "name": "Vua tiếng Việt 2"
             }
         ]
@@ -602,11 +754,12 @@ item_list = [
         ]
     },
     {
+        event: 'HOT',
         name: 'Tiện ích',
         icon: 'fa-solid fa-lamp-street',
         item: [{
-                "url": endpoint + '/tarot',
-                "name": "Tarot"
+                "url": endpoint + '/imgur?link=https://haycafe.vn/wp-content/uploads/2022/02/Anh-gai-xinh-Viet-Nam.jpg',
+                "name": "Imgur Upload"
             },
             {
                 "url": endpoint + '/random/useragent',
@@ -615,34 +768,6 @@ item_list = [
             {
                 "url": endpoint + '/covid?country=viet%20nam',
                 "name": "COVID 19 DATA"
-            },
-            {
-                "url": endpoint + '/wattpad/search?q=conan',
-                "name": "wattpad"
-            },
-            {
-                "url": endpoint + '/imgur?link= link ảnh',
-                "name": "Imgur"
-            },
-            {
-                "url": endpoint + 'checknude?key=(key)&link=',
-                "name": "check nude"
-            },
-            {
-                "url": endpoint + '/img/wallpaper?q=pokemon',
-                "name": "wallpaper"
-            },
-            {
-                "url": endpoint + '/img/wallpaperv2?q=raiden&page=1',
-                "name": "wallpaper2"
-            },
-            {
-                "url": endpoint + '/tinyurl?url=https://cdn.bhdw.net/im/raiden-shogun-raiden-ei-genshin-impact-anime-video-game-wallpaper-79021_w635.webp',
-                "name": "link tinyurl"
-            },
-            {
-                "url": endpoint + '/xsmb',
-                "name": "xsmb"
             }
         ]
     },
@@ -652,15 +777,19 @@ item_list = [
         icon: 'fas fa-user-headset',
         item: [{
             event: 'DO NOT SPAM',
-            url: 'https://www.facebook.com/quangbao04',
+            url: 'https://www.facebook.com/NHD.JRT.262/',
             name: 'Facebook'
         },
         {
-            url: 'https://zalo.me/0702374886',
+            url: 'https://zalo.me/0396049649',
             name: 'Zalo'
-        },     
+        },
         {
-            url: 'quangbao.dev',
+            url: 'https://t.me/nhdjrt262',
+            name: 'Telegram'
+        },       
+        {
+            url: 'https://bio.link/nhdjrt262',
             name: 'My Profile'
         },
         {
@@ -668,9 +797,29 @@ item_list = [
             name: 'Donate Momo'
         },
         {
+            url: 'https://playerduo.com/nhdjrt2602',
+            name: 'Donate PlayerDuo Pay'
+        },
+        {
+            url: 'https://playerduo.com/hdjrt03',
+            name: 'Donate PlayerDuo'
+        },
+        {
+            "url": endpoint + '/apikey?type=register&name=${name}&apikey=JRTxTracy_VIP',
+            "name": "Get API_KEY Vip"
+        },
+        {
             url: 'https://imgur.com/NXX9Lnh',
             name: 'Donate Mbbank (ATM)'
-        } 
+        },
+        {
+            url: 'https://imgur.com/LBeXzsy',
+            name: 'Donate ZaloPay'
+        },
+        {
+            url: 'https://i.imgur.com/vTx2DQp.jpg',
+            name: 'Donate Timo Bank (ATM)'
+        }       
       ]
     }
 ];
