@@ -68,7 +68,7 @@ item_list = [
     },
     {
         name: 'Instagram',
-        icon: 'fab fa-twitter-square',
+        icon: 'fab fa-instagram-square',
         item: [{
                 "url": endpoint + "/instagram/infouser?ig=mixigaming",
                 "name": "info ins"
