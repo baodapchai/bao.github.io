@@ -638,7 +638,7 @@ item_list = [
         name: 'Tiện ích',
         icon: 'fa-solid fa-lamp-street',
         item: [{
-                "url": endpoint + '/imgur?link=https://haycafe.vn/wp-content/uploads/2022/02/Anh-gai-xinh-Viet-Nam.jpg',
+                "url": endpoint + '/imgur?link=https://i.postimg.cc/tTBpCK1t/181261765-187217643134575-3841721186713397745-n.jpg',
                 "name": "Imgur Upload"
             },
             {
@@ -646,8 +646,28 @@ item_list = [
                 "name": "Random User-Agent"
             },
             {
-                "url": endpoint + '/covid?country=viet%20nam',
-                "name": "COVID 19 DATA"
+                "url": endpoint + 'checknude?key=(key)&link=',
+                "name": "Check nude"
+            },
+            {
+                "url": endpoint + '/img/wallpaper?q=pokemon',
+                "name": "Wallpaper"
+            },
+            {
+                "url": endpoint + '/img/wallpaperv2?q=raiden&page=1',
+                "name": "Wallpaperv2"
+            },
+            {
+                "url": endpoint + '/tinyurl?url=https://i.postimg.cc/8zWWcwrv/6b16688a077fdc21856e26.jpg',
+                "name": "Tinyurl"
+            },
+            {
+                "url": endpoint + '/xsmb',
+                "name": "Xsmb"
+            },
+            {
+                "url": endpoint + '/xsmb?date=28/05/2023',
+                "name": "Xsmb theo ngày"
             }
         ]
     },
