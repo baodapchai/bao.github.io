@@ -376,18 +376,23 @@ item_list = [
         icon: 'fas fa-video',
         item: [{
             "event": 'HOT',
-            "url": endpoint + '/video/gaixinh',
+            "url": endpoint + '/images/videogaixinh',
             "name": "Gái xinh"
         },
             {
                 "event": 'HOT',
-                "url": endpoint + '/video/anime',
+                "url": endpoint + '/images/animevd',
                 "name": "Anime"
             },
                {
                 "event": 'NSFW',
-                "url": endpoint + '/video/sex',
+                "url": endpoint + '/images/videosex',
                 "name": "Sex 18+"
+            },
+               {
+                "event": 'HOT',
+                "url": endpoint + '/images/videochill',
+                "name": "Video chill"
             }
         ]
     },
