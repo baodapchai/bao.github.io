@@ -563,55 +563,35 @@ item_list = [
                 "name": "Đố vui"
             },
             {
-                "url": endpoint + '/game/dovuiv2',
-                "name": "Đố vui 2"
+                "url": endpoint + '/game/pubg',
+                "name": "Pubg"
             },
             {
-                "url": endpoint + '/game/dhbc',
-                "name": "Đuổi hình bắt chữ"
+                "url": endpoint + '/game/dhbcv𝟯',
+                "name": "Đuổi hình bắt chữ 3"
             },
             {
                 "url": endpoint + '/game/dhbcv1',
                 "name": "Đuổi hình bắt chữ 1"
             },
             {
-                "url": endpoint + '/game/dhbcv1',
+                "url": endpoint + '/game/dhbcv2',
                 "name": "Đuổi hình bắt chữ 2"
             },
             {
-                "url": endpoint + '/game/dhbcemj',
-                "name": "Đuổi hình bắt chữ Emoji"
-            },
-            {
-                "url": endpoint + '/game/lienquanquiz',
-                "name": "Đố vui Liên Quân"
+                "url": endpoint + '/game/csgo',
+                "name": "Csgo"
             },
             {
                 "url": endpoint + '/game/linkword?word=ngu ngốc',
                 "name": "Nối từ"
             },
             {
-                "url": endpoint + '/game/csgo_grenade',
-                "name": "CSGO v1"
-            },
-            {
-                "url": endpoint + '/game/csgo_heavy',
-                "name": "CSGO v2"
-            },
-            {
-                "url": endpoint + '/game/csgo_knift',
-                "name": "CSGO v3"
-            },
-            {
-                "url": endpoint + '/game/csgo_random',
-                "name": "CSGO v4"
-            },
-            {
                 "url": endpoint + '/game/taixiu',
                 "name": "Tài xỉu"
             },
             {
-                "url": endpoint + '/game/v2/taixiu',
+                "url": endpoint + '/game/taixiuv2',
                 "name": "Tài xỉu 2"
             },
             {
@@ -619,7 +599,7 @@ item_list = [
                 "name": "Vua tiếng Việt"
             },
             {
-                "url": endpoint + '/vuatiengviet/image?word=ngu ngốc',
+                "url": endpoint + '/game/vuatiengviet/image?word=ngu ngốc',
                 "name": "Vua tiếng Việt 2"
             }
         ]
