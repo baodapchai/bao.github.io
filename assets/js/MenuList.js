@@ -619,7 +619,19 @@ item_list = [
             {
                 "url": endpoint + '/pokemon/search?name=Pikachu',
                 "name": "Search Pokemon"
-            }   
+            },
+            {
+                "url": endpoint + '/covid?country=viet nam',
+                "name": "Covid"
+            },
+            {
+                "url": endpoint + '/tarot',
+                "name": "Tarot"
+            },
+            {
+                "url": endpoint + '/wattpad/search?q=[name]',
+                "name": "Wattpad"
+            }
         ]
     },
     {
