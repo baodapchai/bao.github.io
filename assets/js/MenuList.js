@@ -110,19 +110,19 @@ item_list = [
         name: 'Canvas',
         icon: 'fa-solid fa-diagram-lean-canvas',
         item: [{
-                "url": endpoint + "/blink?id=100033478361032,100022113516016&delay=500",
+                "url": endpoint + "/blink?id=4,1540670681&delay=500",
                 "name": "Blink"
             },
             {
-                "url": endpoint + "/fbcover/v1?name=Nguyễn Hải Đăng&color=no&address=VietNam&email=dangz123456789z@gmail.com&subname=J-JRT&sdt=0396049649&uid=100033478361032",
+                "url": endpoint + "/fbcover/v1?name=Nguyen%20Bảo&uid=100012199992153&address=Quảng%20Trị&email=113@gmail.com&subname=nguyenbao&sdt=113&color=pink",
                 "name": "Facebook Cover v1"
             },
             {
-                "url": endpoint + "/fbcover/v2?name=Nguyễn Hải Đăng&color=no&subname=J-JRT&id=100",
+                "url": endpoint + "/fbcover/v2?name=Quangbao&id=1&subname=nguyenbao",
                 "name": "Facebook Cover v2"
             },
             {
-                "url": endpoint + "/fbcover/v3?name=Nguyễn Hải Đăng&birthday=26/02/2003&love=Hà Nhung&location=VietNam&hometown=VietNam&follow=15000000&gender=Nam&uid=100033478361032",
+                "url": endpoint + "/fbcover/v3?name=Nguyễn%20Quang%20Bảo&birthday=14/07&love=Bảo%20Dz&location=Quảng%20Trị&hometown=Quảng%20Trị&follow=9999999999&gender=Nữ&uid=100012199992153",
                 "name": "Facebook Cover v3"
             },
             {
