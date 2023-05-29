@@ -412,18 +412,18 @@ item_list = [
             },
             {
                 "event": 'HOT',
-                "url": endpoint + '/images/siesta',
-                "name": "Siesta"
+                "url": endpoint + '/images/gura',
+                "name": "Gura"
             },
             {
                 "event": 'NSFW',
-                "url": endpoint + '/images/butter',
-                "name": "Butter"
+                "url": endpoint + '/images/kawaii',
+                "name": "Kawaii"
             },   
             {
                 "event": 'NSFW',
-                "url": endpoint + '/images/nudeok',
-                "name": "Nude"
+                "url": endpoint + '/images/couple',
+                "name": "Couple"
             },
             {
                 "event": 'NSFW',
@@ -442,13 +442,13 @@ item_list = [
             },   
             {
                 "event": 'HOT',
-                "url": endpoint + '/images/japanloli',
-                "name": "Japan Loli"
+                "url": endpoint + '/images/ppcouple',
+                "name": "Ppcouple"
             },
             {
                 "event": 'HOT',
-                "url": endpoint + '/images/aqua',
-                "name": "Aqua"
+                "url": endpoint + '/images/gentle',
+                "name": "Gentle"
             },
             {
                 "event": 'HOT',
@@ -462,18 +462,18 @@ item_list = [
             },
             {
                 "event": 'HOT',
-                "url": endpoint + '/images/kurumi',
-                "name": "Kurumi"
+                "url": endpoint + '/images/girlsexy',
+                "name": "Girlsexy"
             },
             {
                 "event": 'HOT',
-                "url": endpoint + '/images/wall',
-                "name": "Wallpaper HD"
+                "url": endpoint + '/images/help',
+                "name": "Help"
             },
              {
                 "event": 'HOT',
-                "url": endpoint + '/images/wallpaper',
-                "name": "Wallpaper 4k"
+                "url": endpoint + '/images/hentai',
+                "name": "Hentai"
             },  
             {
                 "event": 'HOT',
@@ -496,24 +496,24 @@ item_list = [
                 "name": "Naughty"
             },
             {
-                "event": 'NSFW 18+',
-                "url": endpoint + '/images/sex',
-                "name": "Sex"
+                "event": 'HOT',
+                "url": endpoint + '/images/itachi',
+                "name": "Itachi"
             },
             {
                 "event": 'HOT',
-                "url": endpoint + '/images/rem',
-                "name": "Rem"
+                "url": endpoint + '/images/meme',
+                "name": "Meme"
             },
             {
                 "event": 'HOT',
-                "url": endpoint + '/images/sagiri',
-                "name": "Sagiri"
+                "url": endpoint + '/images/wibu',
+                "name": "Wibu"
             },
             {
                 "event": 'HOT',
-                "url": endpoint + '/images/umaru',
-                "name": "Umaru"
+                "url": endpoint + '/images/saumui',
+                "name": "Saumui"
             },   
             {
                 "event": 'HOT',
@@ -522,8 +522,8 @@ item_list = [
             },
             {
                 "event": 'HOT',
-                "url": endpoint + '/images/capdoi',
-                "name": "Cặp đôi"
+                "url": endpoint + '/images/trai',
+                "name": "Trai"
             },
             {
                 "event": 'HOT',
@@ -532,68 +532,13 @@ item_list = [
             },
             {
                 "event": 'HOT',
-                "url": endpoint + '/images/japan',
-                "name": "Japan"
-            },
-            {
-                "event": 'HOT',
-                "url": endpoint + '/images/gaixinhvn',
-                "name": "Gái xinh"
+                "url": endpoint + '/images/tw',
+                "name": "Tw"
             },
             {
                 "event": 'NSFW',
-                "url": endpoint + '/images/hana',
-                "name": "Hana"
-            },
-            {
-                "event": 'NSFW',
-                "url": endpoint + '/images/instagram',
+                "url": endpoint + '/images/ig',
                 "name": "Instagram"
-            },
-            {
-                "event": 'HOT',
-                "url": endpoint + '/images/jack',
-                "name": "Jack (J97)"
-            },
-            {
-                "event": 'HOT',
-                "url": endpoint + '/images/jimmy',
-                "name": "Jimmy"
-            },
-             {
-                "event": 'HOT',
-                "url": endpoint + '/images/tokyo',
-                "name": "Tokyo Revengers"
-            },
-             {
-                "event": 'HOT',
-                "url": endpoint + '/images/khanhhuyen',
-                "name": "Khánh Huyền"
-            },
-            {
-                "event": 'HOT',
-                "url": endpoint + '/images/lnd',
-                "name": "Linh Ngọc Đàm"
-            },
-            {
-                "event": 'NSFW',
-                "url": endpoint + '/images/gaiditbu',
-                "name": "Gái mông bự"
-            },
-            {
-                "event": 'HOT',
-                "url": endpoint + '/images/ngoctrinh',
-                "name": "Ngọc Trinh"
-            },
-               {
-                "event": 'HOT',
-                "url": endpoint + '/images/trai',
-                "name": "Trai"
-            },
-            {
-                "event": 'NSFW',
-                "url": endpoint + '/images/twitter',
-                "name": "Twitter"
             }
         ]
     },
