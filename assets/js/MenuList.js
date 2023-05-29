@@ -168,6 +168,30 @@ item_list = [
             {
                 "url": endpoint + "/cardinfo?location=Quảng%20Trị&name=nguyenbao&gender=Nam&vanity=nguyenbao.03&uid=100012199992153&chuky=NguyenBao",
                 "name": "Cardinfo"
+            },
+            {
+                "url": endpoint + "/ggsaid?name=nguyenbao",
+                "name": "m52"
+            },
+            {
+                "url": endpoint + "/hn2022?&name=Nguyễn%20Quang%20Bảo&kieu=2&uid=100012199992153",
+                "name": "lixi"
+            },
+            {
+                "url": endpoint + "/mkt?text1=Nguyễn%20Quang%20Bảo&text2=Bảo%20Dz&fb=nguyenbao&ma=xxx@gmail.com&tl=113&lc=Quảng%20Trị&uid=100012199992153",
+                "name": "Bìa mkt"
+            },
+            {
+                "url": endpoint + "/moon?name=Nguyễn%20Quang%20Bảo&ngay=11&thang=11&nam=2011",
+                "name": "moon"
+            },
+            {
+                "url": endpoint + "/tad?color1=red&color2=blue&tenchinh=Nguyễn%20Quang%20Bảo&ten_phu=Bảo%2004",
+                "name": "Logo"
+            },
+            {
+                "url": endpoint + "/tichxanh?kieu=2&uid=100012199992153&name=NguyenBao",
+                "name": "Tích xanh"
             }
         ]
     },
