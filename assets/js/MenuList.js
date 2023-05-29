@@ -214,7 +214,7 @@ item_list = [
         name: 'Uptime Robot',
         icon: 'fa-solid fa-robot-astromech',
         item: [{
-                "url": endpoint + '/uptimerobot/create?url=https://JRTmain-2.ChuonCa.repl.co/&name=ChuonCa',
+                "url": endpoint + '/uptimerobot/create?url= Dán url vào đây',
                 "name": "Uptime Create"
             }
         ]
@@ -342,12 +342,25 @@ item_list = [
         ]
     },
     {
-        name: 'Short Url',
+        name: 'Other',
         icon: 'fa-solid fa-curling-stone',
         item: [{
-            "url": endpoint + '/slink?url=https://www.youtube.com/watch?v=Jk38OqdAQxc',
-            "name": "Short Url"
-        }]
+            "url": endpoint + '/poem/love',
+            "name": "Thính tình yêu"
+        },
+               {
+            "url": endpoint + '/poem/cadao',
+            "name": "cadao"
+        },
+               {
+            "url": endpoint + '/poem/truyencuoi',
+            "name": "Truyện cười"
+        },
+               {
+            "url": endpoint + '/poem/joker',
+            "name": "joker"
+        }
+              ]
     },
     {
         name: 'Pinterest',
