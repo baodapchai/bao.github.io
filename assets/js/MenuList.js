@@ -41,28 +41,24 @@ item_list = [
         name: 'TikTok',
         icon: 'fa-brands fa-tiktok',
         item: [{
-                "url": endpoint + "/tiktok?url=https://vm.tiktok.com/https://vt.tiktok.com/ZS8jhVtr3/",
+                "url": endpoint + "/tiktok/downloadvideo?url=https://vt.tiktok.com/ZSLRyjNuT/",
                 "name": "TikTok Downloader"
             },
             {
-                "url": endpoint + '/tiktok/download?link=https://vt.tiktok.com/ZS8jhVtr3/',
-                "name": "Tiktok Downloader 2"
+                "url": endpoint + '/tiktok/downloadvideo?url=https://v.douyin.com/UD4asNJ/',
+                "name": "Tiktok douyin"
             },   
             {
-                "url": endpoint + "/tiktok?search=hd.jrt03",
+                "url": endpoint + "/tiktok/searchvideo?keywords=mixi",
                 "name": "TikTok Search"
             },
             {
-                "url": endpoint + "/tiktok/trending",
+                "url": endpoint + "/tiktok/trendingtiktok",
                 "name": "TikTok Trending"
             },   
             {
-                "url": endpoint + "/tiktok?username=hd.jrt03",
+                "url": endpoint + "/tiktok/infov2?username=mixigaming",
                 "name": "TikTok Info User"
-            },
-            {
-                "url": endpoint + '/tiktok/info?username=hd.jrt03',
-                "name": "Tiktok Info User 2"
             }   
         ]
     },
@@ -70,8 +66,8 @@ item_list = [
         name: 'Twitter',
         icon: 'fab fa-twitter-square',
         item: [{
-                "url": endpoint + "/twitter/video?url=https://twitter.com/b_dm12/status/1607003962292711424?s=20&t=CXAPUq93Y7DsHR2ViHXK5w",
-                "name": "Twitter Downloader"
+                "url": endpoint + "/instagram/infouser?ig=mixigaming",
+                "name": "instagram info"
             }
         ]
     },
