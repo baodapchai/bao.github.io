@@ -134,23 +134,23 @@ item_list = [
                 "name": "Facebook Cover v3"
             },
             {
-                "url": endpoint + "/tiki?text=Nguyễn Hải Đăng",
-                "name": "Đi cùng Tiki"
+                "url": endpoint + "/lienquan?id=45&word=quangbao",
+                "name": "Ảnh Liên Quân"
             },
             {
-                "url": endpoint + "/cccd?text1=Nguyễn%20Hải%20Đăng&text2=26/02/2003&text3=Nam&text4=TPHCM&urlimg=https://i.ibb.co/F0Y0rFr/279917930-5866733526676879-1511731601410750983-n.jpg",
+                "url": endpoint + "/cccd?text1=bao&text2=bao&text3=dz&text4=fuho&urlimg=https://i.imgur.com/p9wciqt.jpg",
                 "name": "Fake CCCD"
             },   
             {
-                "url": endpoint + "/thuphap?id=1&sodong=1&dong_1=Nguyễn Hải Đăng",
+                "url": endpoint + "/thuphap?id=1&sodong=3&dong_1=Nguyễn&dong_2=Minh&dong_3=Bảo",
                 "name": "Chữ Thư Pháp"
             },
             {
-                "url": endpoint + "/giangsinh?text=Hải Đăng",
+                "url": endpoint + "/giangsinh?text=nguyenbao",
                 "name": "Giáng Sinh"
             },
             {
-                "url": endpoint + "/shopmaihuong?text1=Nguyễn Hải Đăng&text2=0396049649",
+                "url": endpoint + "/shopmaihuong?text1=test&text2=0258965JQK",
                 "name": "Shop Mike Hường"
             }
         ]
