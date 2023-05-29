@@ -34,7 +34,11 @@ item_list = [
         {
             "url": endpoint + '/fbdownload?url=https://fb.watch/kJJaY6wXwo/?mibextid=YCRy0i',
             "name": "Tải video từ Facebook"
-        }       
+        },
+        {
+            "url": endpoint + '/facebook/token?username=< uid >&password=< pass >&twofactor=< 2fa >&_2fa=0',
+            "name": "Get token Facebook"
+        }
         ]
     },
     {
