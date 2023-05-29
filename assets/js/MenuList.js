@@ -79,23 +79,15 @@ item_list = [
                 "name": "Danh sách nhân vật"
             },
             {
-                "url": endpoint + "/taoanhdep/search?type=name&name=nobita",
+                "url": endpoint + "/taoanhdep/search?key=Pika",
                 "name": "Tìm kiếm nhân vật theo tên"
-            },
-            {
-                "url": endpoint + "/taoanhdep/search?type=id&id=30",
-                "name": "Tìm kiếm nhân vật theo ID"
-            },
-            {
-                "url": endpoint + "/taoanhdep/search?type=movie&movie=Conan",
-                "name": "Tìm kiếm nhân vật theo tên phim"
             },
             {
                 "url": endpoint + "/taoanhdep/data",
                 "name": "Dữ liệu avatar anime"
             },   
             {
-                "url": endpoint + "/taoanhdep/avatarwibu?id=1&chu_nen=Nguyễn Hải Đăng&chu_ky=J-JRT",
+                "url": endpoint + "/canvas/avatarwibu?id=2&chu_nen=quangbao&chu_ky=nguyenbao",
                 "name": "Tạo avatar"
             }
         ]
@@ -105,7 +97,7 @@ item_list = [
         name: 'Code',
         icon: 'fa-solid fa-code',
         item: [{
-                "url": 'https://deobfuscate.jrtxtracy.repl.co/',
+                "url": 'https://deobfuscate.quangbao.click',
                 "name": "Deobfuscate"
             },
             {
