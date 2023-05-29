@@ -152,6 +152,22 @@ item_list = [
             {
                 "url": endpoint + "/shopmaihuong?text1=test&text2=0258965JQK",
                 "name": "Shop Mike Hường"
+            },
+            {
+                "url": endpoint + "/anhbia?name=nguyen%20bao&age=2009",
+                "name": "Ảnh bìa"
+            },
+            {
+                "url": endpoint + "/bannertc?kieu=1&age=2009&name=nguyen%20bao",
+                "name": "Ảnh bìa v2"
+            },
+            {
+                "url": endpoint + "/bannertc2?age=2009&name=Bảo%20DeepTry&text=nguyenbao",
+                "name": "Ảnh bìa v3"
+            },
+            {
+                "url": endpoint + "/cardinfo?location=Quảng%20Trị&name=nguyenbao&gender=Nam&vanity=nguyenbao.03&uid=100012199992153&chuky=NguyenBao",
+                "name": "Cardinfo"
             }
         ]
     },
