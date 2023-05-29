@@ -73,6 +73,10 @@ item_list = [
                 "url": endpoint + "/instagram/infouser?ig=mixigaming",
                 "name": "instagram info"
             },
+            {
+                "url": endpoint + "/instagram/downloadpost?url=https://www.instagram.com/reel/CsrDMiOLgpB/?utm_source=ig_web_copy_link&igshid=MmJiY2I4NDBkZg==",
+                "name": "instagram dowload"
+            }
         ]
     },
     {
