@@ -24,20 +24,16 @@ item_list = [
         name: 'Facebook',
         icon: 'fa-brands fa-facebook',
         item: [{
-            "url": endpoint + '/facebook/finduid?url=https://www.facebook.com/NHD.JRT.262/',
+            "url": endpoint + '/facebook/finduid?uid=4',
             "name": "Find UID"
         },
         {
-            "url": endpoint + '/facebook/info?uid=100033478361032',
+            "url": endpoint + '/facebook/getinfo?uid=4',
             "name": "Get Info"
         },
         {
-            "url": endpoint + '/facebook/video?url=https://www.facebook.com/watch?v=587760489446657',
+            "url": endpoint + '/fbdownload?url=https://fb.watch/kJJaY6wXwo/?mibextid=YCRy0i',
             "name": "Tải video từ Facebook"
-        },
-        {
-            "url": 'https://getidfb.vorhaidang0123.repl.co/',
-            "name": "Lấy UID Facebook"
         }       
         ]
     },
