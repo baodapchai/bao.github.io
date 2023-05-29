@@ -677,19 +677,19 @@ item_list = [
         icon: 'fas fa-user-headset',
         item: [{
             event: 'DO NOT SPAM',
-            url: 'https://www.facebook.com/nguyentyhanhmai.profile/',
+            url: 'https://www.facebook.com/quangbao04/',
             name: 'Facebook'
         },
         {
-            url: 'https://zalo.me/0974052602',
+            url: 'https://zalo.me/0702374886',
             name: 'Zalo'
         },     
         {
-            url: 'nguyenthanhmai.tk',
+            url: 'https://quangbao.dev',
             name: 'My Profile'
         },
         {
-            url: 'https://me.momo.vn/qr-page/P2P/donatetome',
+            url: 'https://me.momo.vn/quangbao',
             name: 'Donate Momo'
         },
         {
