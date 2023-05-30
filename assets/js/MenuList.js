@@ -130,7 +130,7 @@ item_list = [
                 "name": "Facebook Cover v2"
             },
             {
-                "url": endpoint + "/fbcover/v3?name=Nguyễn%20Quang%20Bảo&birthday=14/07&love=Bảo%20Dz&location=Quảng%20Trị&hometown=Quảng%20Trị&follow=9999999999&gender=Nữ&uid=100012199992153",
+                "url": endpoint + "/fbcover/v3?name=Nguyễn%20Công%20Quang%20Bảo&birthday=26/04/2024&love=Độc%20Thân&location=VietNam&hometown=VietNam&follow=17.928&gender=Nam&uid=100012199992153",
                 "name": "Facebook Cover v3"
             },
             {
