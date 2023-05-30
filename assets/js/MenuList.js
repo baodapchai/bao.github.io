@@ -567,6 +567,10 @@ item_list = [
                 "name": "Pubg"
             },
             {
+                "url": endpoint + '/game/dovuilq',
+                "name": "Đố vui liên quân"
+            },
+            {
                 "url": endpoint + '/game/dhbcv𝟯',
                 "name": "Đuổi hình bắt chữ 3"
             },
