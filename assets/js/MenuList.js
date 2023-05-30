@@ -220,15 +220,15 @@ item_list = [
         ]
     },
     {
-        name: 'SoundCloud',
+        name: 'Short url',
         icon: 'fa-brands fa-soundcloud',
         item: [{
-                "url": endpoint + '/soundcloud?search=son tung',
-                "name": "SoundCloud Search"
+                "url": endpoint + '/slink?url=https://www.youtube.com/watch?v=Jk38OqdAQxc',
+                "name": "Short url"
             },
             {
-                "url": endpoint + '/soundcloud?url=https://soundcloud.com/sontungmtp-music/ch-ng-ta-c-a-hi-n-t-i',
-                "name": "SoundCloud Downloader"
+                "url": endpoint + '/imgurupload?link=https://imgur.com/jwl7FUP.mp4',
+                "name": "Imgur video"
             }
         ]
     },
